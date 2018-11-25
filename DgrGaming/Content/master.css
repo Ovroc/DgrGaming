@@ -1,0 +1,169 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-style: normal;
+    background-color: #ffffff !important;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    color: rgba(0,0,0,.68) !important;
+    margin: 0 0 160px; /* altura do footer */
+}
+
+.dgrBar {
+    display: block;
+    font-size: 16px;
+    background: rgba(255,255,255,.97) !important;
+}
+
+.infoAdm {
+    font-size: 13px;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    color: #0c0e17 !important;
+    font-weight: 600;
+}
+
+    .infoAdm:hover {
+        text-decoration: none !important;
+        color: #13a89e !important;
+    }
+
+.dgrItemBar {
+    max-width: 1032px !important;
+}
+
+.dgrContainer {
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 18% 0 18%;
+}
+
+.dgrNavBar {
+    cursor: pointer;
+    text-transform: uppercase !important;
+    font-size: 12px;
+    text-decoration: none !important;
+    color: rgba(0,0,0,.68) !important;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #13a89e !important;
+    border-radius: 10px !important;
+}
+
+.dgrTituloApresentacao {
+    font-weight: 600;
+}
+
+.dgrNavBar:hover {
+    color: #13a89e !important;
+}
+
+.Titulo {
+    font-size: 20px !important;
+    font-family: 'Kanit', cursive;
+    color: #13a89e !important;
+    cursor: default;
+}
+
+.custom-control-input:after {
+    background-color: red;
+}
+
+/* Footer */
+.Rodape {
+    margin-top: 0%;
+    background-color: #0c0e17;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    bottom: 0%;
+    position: absolute !important;
+    right: 0px;
+    width: 100%;
+    height: 160px;
+}
+
+.ConteudoRodape {
+    padding-top: 5%;
+    width: 100%;
+    color: #fff;
+    min-width: 300px;
+}
+
+.MenuRodape {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.InfoRodape:hover {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.InfoRodape {
+    color: #fff;
+}
+
+.DescRodape {
+    color: #dee5ea;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+
+
+/*Altera a cor nas tabelas ListaPublicacao / ListaUsuarios*/
+
+.OptEditar {
+    color: #000000;
+}
+
+    .OptEditar:hover {
+        color: #1974d7;
+    }
+
+.OptExcluir {
+    color: #000000;
+}
+
+    .OptExcluir:hover {
+        color: #dd1e1e;
+    }
+
+
+@media(max-width:670px) {
+
+    #divVisitante {
+        display: none !important;
+    }
+
+    #divAdministrador {
+        display: none !important;
+    }
+
+    .MenuBusca {
+        display: none !important;
+    }
+
+    .Bar {
+        width: 100%;
+        padding-left: 0 !important;
+    }
+}
+
+@media(max-width:1020px) {
+    .Icones {
+        display: none !important;
+    }
+
+    .dgrBusca .containerVerPublicacao {
+        padding-top: 8rem;
+    }
+}

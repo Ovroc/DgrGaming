@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DGR.master.cs" Inherits="DgrGaming.Pagina.DGR" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>DGR Gamming</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <!--Css Font Awesome e Bootstrap-->
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Folha de Estilo .Css-->
+    <link href="../Content/master.css" rel="stylesheet" />
+
+    <%-- Icone de Página --%>
+    <link rel="shortcut icon" type="image/x-icon" href="../Imagem/icone.ico" />
+
+    <!--Referencia a Fonte-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <!--Dependencias do JQuery - Popper - Bootstrap-->
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/popper.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!--Client Side Scripts-->
+    <script src="../Scripts/Default.js"></script>
+
+    <!--Compatibilidade com outros dispositivos do Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="dgrContainer">
+            <div class="dgrBar fixed-top dgrContainer">
+                <div class="dgrItemBar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="form-inline Icones">
+                                    <a class="navbar-brand mb-0" href="Default.aspx">&emsp;<img src="../Imagem/Logo_Buttons.png" height="40" width="40" /></a>
+                                    <h2 class="Titulo pt-2">DGR Gaming</h2>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="form-inline ml-auto">
+                                    <div id="divVisitante" runat="server">
+                                        <asp:TextBox ID="tbEmail" runat="server" class="form-control form-control-sm" placeholder="E-mail" aria-label="E-mail"></asp:TextBox>
+                                        <asp:TextBox ID="tbSenha" runat="server" class="form-control form-control-sm" TextMode="Password" placeholder="Senha" aria-label="Senha"></asp:TextBox>&emsp;                                        
+                                        <asp:Button ID="btLogin" runat="server" class="btn btn-sm btn-outline-dark" Text="Entrar" OnClick="btLogin_Click" />
+                                    </div>
+                                    <div id="divAdministrador" runat="server">
+                                        <ul class="list-inline mr-auto">
+                                            <li class="list-inline-item"><span id="lbBoasVindas" runat="server"></span></li>
+                                            <li class="list-inline-item"><a href="ListaPublicacoes.aspx" class="infoAdm">Publicações</a></li>
+                                            <li class="list-inline-item"><a href="ListaUsuarios.aspx" class="infoAdm">Painel</a></li>
+                                            <li class="list-inline-item">
+                                                <asp:Button ID="btSair" runat="server" class="btn btn-sm btn-outline-danger" Text="Sair" OnClick="btSair_Click" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row Bar">
+                            <ul class="list-inline ml-auto mr-auto pt-2 pb-2 text-center">
+                                <li class="list-inline-item dgrNavBar"><a href="Default.aspx" class="dgrNavBar">Home</a></li>
+                                <li class="list-inline-item"><a href="https://twitter.com/ProjetoGaming" target="_blank" class="dgrNavBar">Twitter</a></li>
+                                <li class="list-inline-item"><a href="https://facebook.com/DGR-Gaming-200521834089533" target="_blank" class="dgrNavBar">Facebook</a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/projetogaming.dgr/" target="_blank" class="dgrNavBar">instagram</a></li>
+                                <li class="list-inline-item dgrNavBar"><a onclick="buscarMais(1)" class="dgrNavBar">Mais Acessadas</a></li>
+                                <li class="list-inline-item dgrNavBar"><a onclick="buscarMais(2)" class="dgrNavBar">Melhores Avaliadas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-inline" id="divAlterarPublicacaoHome"></div>
+
+            <%-- Conteúdo --%>
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server"></asp:ContentPlaceHolder>
+
+        </div>
+        <%-- Rodapé --%>
+        <div class="Rodape">
+            <div class="ConteudoRodape">
+                <div class="MenuRodape">
+                    <a class="InfoRodape" href="http://www.unilago.edu.br/cursos/graduacao/info/?id=71">Sistemas de Informação</a>
+                </div>
+            </div>
+            <div class="col-12 DescRodape">© 2018 - DGR Gaming. Todos os direitos reservados.</div>
+        </div>
+    </form>
+</body>
+</html>

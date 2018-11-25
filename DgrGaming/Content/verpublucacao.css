@@ -1,0 +1,51 @@
+﻿.containerVerPublicacao {
+    padding-top: 8rem;
+}
+
+.tituloPublicacao {
+    text-transform: uppercase !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.ConteudoPublicacao {
+    color: rgba(0,0,0,.80) !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.imgPublicacao {
+    border-radius: 1.50rem !important;
+}
+
+.dadosPublicacao {
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+}
+
+.votacaoPublicacao {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    font-size: 1.6rem;
+    cursor: pointer;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    color: #808080 !important;
+}
+
+.votacaoPublicacao > span:hover,
+.votacaoPublicacao > span:hover ~ span {
+    color: gold !important;
+}
+
+.votacaoPublicacao > span:hover:before,
+.votacaoPublicacao > span:hover ~ span:before {
+    color: gold !important;
+}
+
+.BgOff {
+    color: #ffffff !important;
+}
