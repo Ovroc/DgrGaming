@@ -7,7 +7,7 @@ O sistema DGR Gaming deverá ser desenvolvida para ser utilizada em qualquer dis
 As publicações serão apresentadas em forma de feed, e quando o usuário quiser ver todo o conteúdo irá clicar na publicação para visualizar de modo completo
 
 As principais funções do DGR Gaming que devem ser implementadas são as seguintes:
-*	
+
 + Cadastro/Alteração de usuário;
 +	Comentários no artigo;
 +	Avaliação do artigo;
